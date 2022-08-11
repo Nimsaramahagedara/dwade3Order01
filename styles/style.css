@@ -1,0 +1,378 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Bar*/
+.navigation{
+    background-color: white;
+    position: sticky;
+    position:-webkit-sticky;
+    top:0px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    
+}
+.logo{
+    width: 150px;
+    height: auto;
+    display: inline-block;
+}
+.menuico{
+    font-size: 24px;
+    float: right;
+    margin: 25px 20px 0px 0px;
+    display: none !important;
+}
+.menuico:hover{
+    cursor: pointer;
+}
+
+.navigation ul{
+    list-style-type: none;
+    float: right;
+    margin-right: 2vw;
+    margin-top: 17px;
+}
+.navigation ul li{
+    align-items: center;
+    display: block;
+    float: left;
+   
+}
+.navigation ul li:hover{
+    background-color:#f1f1f1;
+    transition: 0.3s;
+}
+.navigation ul li a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 10px 20px;
+}
+.active{
+    background-color: rgb(250, 255, 107);
+}
+.clear{
+    clear: both;
+}
+body{
+    background-color: #f1f1f1;
+}
+
+/*First Section */
+
+.container{   
+    width: 100%;
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+    /*For the mobile View Check the Media Query -> Use high quality here and low quality in media query*/
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.73)), url(../images/sectionBG.jpg);
+    line-height: 50px;
+    background-attachment: fixed;
+
+    color: white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.head-text{
+    display: inline;
+    font-size: 48px;
+    font-weight: 800;
+}
+.container div{
+    width: 100%;
+}
+.button{
+    
+    background-color: #00b2ad;
+    padding: 15px 30px;
+
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    border-radius: 50px;
+
+}
+.button:hover{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+    background-color: #028984;
+    transition: 0.3s;
+}
+
+/*Second Section*/
+.section{
+    background-color: white;
+    text-align: center;
+    padding-top: 40px;
+}
+.section h1{
+    font-size: 32px;
+}
+
+.section-2{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 40px 10%;
+}
+
+.section-2 div i{
+    text-align: center;
+    font-size: 32px;
+    color: white;
+    padding: 30px;
+    border-radius: 100%;
+}
+.section-2 div i:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+}
+.section-2 div p{
+    margin-top: 20px;
+}
+.smile i{
+    background-color: darkred;
+}
+.knight i{
+    padding: 30px 35px !important;
+    background-color: green;
+}
+.bulleye i{
+    background-color: #028984;
+}
+
+/*Third Section*/
+
+.third-sec{
+    display: flex;
+    background-color: #f9fbfe;
+    width: 100%;
+    padding: 60px 10%;
+    align-items: center;
+}
+.text-container{
+    width: 50%;
+    padding: 20px;
+    text-align: justify;
+}
+.text-container h2{
+    font-size: 32px;
+}
+.text-container p{
+    margin: 25px 0px;
+    color: gray;
+}
+.image-container img{
+    max-width: 35vw;
+    height: auto;
+}
+
+/*Fourth Sec*/
+
+.fourth-sec{
+    display: block;
+    background-color: white;
+    padding: 5% 10%;
+    text-align: center;
+}
+.fourth-sec h1{
+    font-size: 32px;
+}
+.boxes div i{
+    
+    font-size: 32px;
+    color: white;
+    padding: 20px;
+    background-color: #00b2ad;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.boxes div i:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+}
+.boxes{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+.boxes div p{
+    line-height: 25px;
+    text-align: left;
+}
+.boxes div{
+    padding: 20px;
+}
+
+/*fifth section*/
+
+.fifth-sec{
+    width: 100%;
+    min-height: 80px;
+    background-color:#00b2ad;
+    justify-content: space-between;
+    padding: 30px 10%;
+    text-align: center;
+    color: white;
+}
+.fifth-sec div{
+    display: inline-block;
+    align-items: center;
+    margin: 0 5%;
+}
+.fifth-sec div h2{
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.call-to-action{
+    display: block;
+    background-color: #00b2ad;
+    padding: 20px 40px;
+    margin: 50px auto;
+    border-radius: 50px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    width: 300px;
+    transition: 0.3s;
+}
+.call-to-action:hover{
+    background-color: #028984;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+}
+
+/*footer*/
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+.footer div{
+    width: 20%;
+}
+.footer div h3{
+    margin-bottom: 20px;
+}
+
+#topbtn{
+    display: none;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    padding: 10px 20px;
+    background-color: #f1f1f1;
+    font-size: 24px;
+    color: black;
+}
+
+.useful-links div a{
+    display: block;
+    text-decoration: none;
+    font-weight: 500;
+    color:#028984;
+    margin-bottom: 10px;
+}
+.social-links i{
+    display: inline-block;
+    font-size: 24px;
+    color: #00b2ad;
+    margin-right: 10px;
+}
+.social-links{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 628px) {
+    .container{
+        background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.73)), url(../images/sectionBGLow.jpg);
+    }
+    .logo img{
+        align-items: center;
+        margin: 0 auto;
+    }
+    .menuico{
+        display: block !important;
+    }
+
+    .navigation ul{
+        position: absolute;
+        display: none;
+        background-color: white;
+        width: 100%;
+        margin: 0;
+    }
+    .navigation ul li{
+        float: unset;
+        text-align: center;
+    }
+    .section-2{
+        display: block;
+    }
+    .section-2 div{
+        margin-bottom: 20px;
+    }
+    .fifth-sec div{
+        display: block;
+        margin-bottom: 10px;
+    }
+    .footer{
+        display: block;
+        justify-content: unset;
+    }
+    .footer div{
+        width: 100%;
+        margin:20px 0 10px 0;
+    }
+    .social-links{
+        display: flex;
+        justify-content: unset;
+    }
+    
+}
+
+
+@media screen and (max-width: 970px) {
+ .third-sec{
+    display: block;
+ }
+ .third-sec div{
+    width: 100%;
+ }
+
+ .image-container img{
+    max-width: 80vw;
+
+ }
+ .image-container{
+    text-align: center;
+ }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .boxes{
+        display: block;
+    }
+
+}
+@media screen and (min-width: 628px) {
+    .navigation ul{
+        display: block;
+    }
+    
+}
+
